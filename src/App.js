@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Logo, MainWrapper, Link } from './App.styled';
+
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <MainWrapper>
+        <Logo src="https://play-lh.googleusercontent.com/p6kS3dCcILt9Z4vRMxHXZTbRecqnZTx5ysBVp6Qe3fDofokRLuWjRxF8J0TkMTG2gKo" />
+        <Link num={1} href="https://www.google.com" target="_blank" >Home</Link>
+        <Link num={2} href="https://www.google.com" target="_blank" >About</Link>
+      </MainWrapper>
+
     </div>
   );
 }
